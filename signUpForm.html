@@ -23,7 +23,7 @@
 						<a href="locations.html">Locations</a>
 					</li>
 					<li>
-						<a id="logo-item" href="index.html">Glamour'S</a>
+						<a id="logo-item" href="#index.html">Glamour'S</a>
 					</li>
 				</ul>
 				<div class="nav-right">
@@ -31,74 +31,36 @@
 				</div>
 			</nav>
 		</header>
-		
+
 		<section id="content-container">
-			<section>
-				<div class="paralax parallax-one mt-0">
-					<h3>Locations.</h3>
-					<h4>Get to know about our studios and venues</h4>
-				</div>
+			<section  id="sign-up-container">
+				<form id="signup-form" action="#" method="post" onsubmit="validateSignUpForm();">
+					<h1>Create Account</h1>
+					<div class="form-item">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="Enter your name...">
+						<p id="nameError"></p>
+					</div>
+					<div class="form-item">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="Enter an email...">
+						<p id="emailError"></p>
+					</div>
+					<div class="form-item">
+						<label for="password">Create password</label>
+						<input type="password" name="password" id="password" placeholder="Create a password...">
+						<p id="passwordError"></p>
+					</div>
+					<div class="form-item">
+						<label for="password-confirm">Confirm password</label>
+						<input type="password" name="password-confirm" id="password-confirm" placeholder="Confirm your password...">
+						<p id="confirmPasswordError"></p>
+					</div>
+					<input class="signUp" type="submit" value="Sign Up">
+					<a href="signInForm.html" class="formLink">Already a member?</a>
+				</form>	
 			</section>
 
-			<h2 class="pt-0 location-heading">Studios</h2>
-			<div class="location-container">
-				<div class="box">
-					<img src="Images/studio1.webp" alt="studio">
-					<span>LA, USA</span>
-				</div>
-				<div class="box">
-					<img src="Images/studio2.webp" alt="studio" >
-					<span>Nice, France</span>
-				</div>
-				<div class="box">
-					<img src="Images/studio3.webp" alt="studio">
-					<span>London, England</span>
-				</div>
-			</div>
-			<div class="location-container">
-				<div class="box">
-					<img src="Images/studio7.webp" alt="studio">
-					<span>Jakarta, Indonesia</span>
-				</div>
-				<div class="box">
-					<img src="Images/studio8.webp" alt="studio">
-					<span>Hong Kong, Hong Kong</span>
-				</div>
-				<div class="box">
-					<img src="Images/studio10.webp" alt="studio">
-					<span>Bangkok, Thailand</span>
-				</div>
-			</div>
-
-			<h2 class="location-heading">Venues</h2>
-			<div class="location-container">
-				<div class="box">
-					<img src="Images/venue1.webp" alt="venue">
-					<span>Paris, France</span>
-				</div>
-				<div class="box">
-					<img src="Images/venue2.webp" alt="venue">
-					<span>Tokyo, Japan</span>
-				</div>
-				<div class="box">
-					<img src="Images/venue4.webp" alt="venue">
-					<span>Singapore</span>
-				</div>
-			</div>
-			<div class="location-container">
-				<div class="box">
-					<img src="Images/venue5.webp" alt="venue">
-					<span>New York, USA</span>
-				</div>
-				<div class="box">
-					<img src="Images/venue6.webp" alt="venue">
-					<span>Rome, Italy</span>
-				</div>
-				<div class="box">
-					<img src="Images/venue7.webp" alt="venue">
-					<span>Busan, South Korea</span>
-				</div>
-			</div>
 		</section>
 
 		<section id="footer-container" class="container">
@@ -126,6 +88,6 @@
 		</footer>
 	</section>
 </section>
-
+<script src="Script/script.js"></script>
 </body>
 </html>

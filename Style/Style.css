@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#main-container{
+    background: #F7F7F2;
+    width:100%;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+#header-container{
+	background-color:rgba(92, 87, 85,0.6);
+	width:100%;
+	z-index:2;
+	position: absolute;
+	top:0;
+}
+
+
+/*PARALAX*/
+.paralax{
+	margin: 5% 0;
+	padding:10% 0;
+	overflow: hidden; 
+	position: relative; 
+	width: 100%;
+	background-attachment: fixed; 
+	background-size: cover;  
+	background-position: center center;
+}
+.paralax h3{
+	text-align: center;
+	font-size: 4em;
+	color:#463f3a;
+}
+.paralax h4{
+	text-align: center;
+	font-size: 2.2em;
+	color:#463f3a;
+}
+.parallax-one {
+	background-image: url(../Images/paralax1.webp);
+}
+.parallax-two {
+	background-image: url(../Images/paralax2.webp);
+}
+.parallax-three {
+	background-image: url(../Images/paralax3.webp);
+}
+
+
+
+/*DEVIDER*/
+.devider{
+	margin: 5%;
+}
+.heading{
+	font-size: 3em;
+	color:#8a817c;
+	text-align:center
+}
+.subHeading{
+	font-size: 2.5em;
+	color:#8a817c;
+	text-align:center
+}
+
+
+/*NAVIGATION*/
+#header-container #logo-item{
+    font-size: 1.7em;
+	font-weight:600;
+	margin-left: 60%;
+}
+.main-nav{
+	list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+.main-nav li{
+	display: block;
+	position:relative;
+	float: left;
+	font-size: 1.4em;
+	margin:0.5% 1.5%
+}
+.main-nav li:hover{
+	color:#463f3a;
+	border-radius: 10px
+}
+.main-nav li:hover .main-subnav{
+	display:block;
+}
+.main-nav li a{
+	color:#f4f3ee;
+	text-decoration:none;
+}
+.main-subnav{
+	display:none;
+	list-style:none;
+	z-index:2;
+	position:absolute;
+	top:2.35em;
+	padding: 0;
+	background-color:rgba(92, 87, 85,0.6);
+}
+.main-subnav li{
+	display: block;
+}
+.main-subnav a{
+	display:block;
+	color:#f4f3ee;
+	font-size: 0.8em;
+	padding:0%;
+}
+.nav-right{
+    position: absolute;
+    display: flex;
+    right: 3%;
+    top: 10%;
+}
+.icon{
+	font-size:1.5em;
+	margin:20%;
+	color:#f4f3ee
+}
+
+
+/*HOME PAGE*/
+#videoBanner{
+	width: 100%;
+}
+.content{
+	margin: 5%;
+}
+.description{
+	margin:1.6%;
+	margin-bottom:8%;
+	width:30%;
+	float:left;
+	border: 3px solid #463f3a;
+	background-color:#DFE0DC;
+	box-shadow: 15px 10px #8a817c;
+	text-align: justify;
+	padding: 2%
+}
+.description img{
+	width:100%;
+}
+.description:hover{
+	 transform: scale(1.2)
+}
+#team{
+	justify-content: center;
+	margin:5%;
+}
+.teamCaptions{
+	background: rgba(247, 247, 242, 0.7);
+	border: 2px solid #002A32;
+	border-radius: 30px;
+	width:40%;
+	margin: 0 auto;
+}
+.colorTeam{
+	color: #002A32;
+}
+
+
+/*CONCEPT PAGE*/
+#vertical-nav{
+	background: #f6f6e6;
+}
+#vertical-nav ul{
+	list-style-type: none;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+}
+#vertical-nav a{
+	font-size: 2.5em;
+	text-decoration: none;
+	color: #62A87C;
+}
+.concept-heading{
+	text-align:center;
+	font-size: 2.5em;
+	color:#463f3a;
+	margin: 0 2% auto;
+	padding-top:7%;
+}
+.concept-subheading{
+	text-align:center;
+	font-size: 1.5em;
+	color:#8a817c;
+	margin: 2% auto;
+}
+.grid-container {
+	columns: 5 200px;
+	column-gap: 1.5em;
+	width: 90%;
+	margin: 0 auto;
+}
+.grid-container div {
+    width: 15%;
+    margin: 0 1.2em 1.2em 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 0.2%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    transition: all .25s ease-in-out;
+}
+.grid-container img {
+    width: 100%;
+    filter: grayscale(100%);
+    border-radius: 15px;
+    transition: all .25s ease-in-out;
+}
+.grid-container img:hover {
+    filter: grayscale(0);
+	border: 3px solid #8a817c
+}

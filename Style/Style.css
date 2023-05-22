@@ -104,6 +104,9 @@
 	margin:20%;
 	color:#f4f3ee
 }
+.v-nav-list{
+	display:none;
+}
 
 
 /*HOME PAGE*/
@@ -255,7 +258,7 @@ form {
 	height: 50%;
 	text-align: center;
 }
-form h1 {
+form h2 {
 	font-weight: bold;
 	font-size:2em;
 	margin: 5%;
@@ -285,7 +288,7 @@ form input[type=submit] {
 	width:70%;
 }
 .form-item label{
-	font: 1.3em Lucida Sans Typewriter;
+	font: 1.3em 'Lucida Sans Typewriter';
 	color:#463f3a
 }
 .form-item p{
@@ -400,13 +403,8 @@ form input[type=submit] {
 		width: 90%;
 		margin: 10% 5%
 	}
-
-	#header-container #logo-item{
-		font-size: 1.7em;
-		font-weight:600;
-		margin-left: 130%;
-	}
-	.main-nav{
+	.main-nav, .nav-right{
+		display:flex;
 		flex-direction: column;
 		padding: 0;
 	}
@@ -415,14 +413,17 @@ form input[type=submit] {
 	}
 	.nav-right{
 		position: relative;
-    	display: block;
-    	margin-left: 38%;
-
+		display: block;
+		margin-left: 38%;
 	}
 	.icon{
 		font-size:1.5em;
 		margin:20%;
 		color:#f4f3ee
 	}
-
+	.v-nav-list{
+		display: inline;
+		margin: 2% 47%;
+		font-size: 2em;
+	}
 }
